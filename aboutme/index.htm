@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>About Me</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #addba2, #bce4a1);
+    color: #2b3a2b;
+    max-width: 800px;
+    min-height: 600px;
+    margin: auto;
+    padding: 30px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    padding: 35px;
+    width: 100%;
+    max-width: 780px;
+    height: 500px; /* increased from 420px */
+    gap: 45px;
+  }
+
+  .title-about {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #81a081;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 7px #769967cc;
+  }
+
+  .emoji {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #779977;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 7px #769967cc;
+  }
+
+  .photo-frame {
+    flex: 0 0 280px;
+    border: 8px solid #6f8a6c;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 28px #449941cc;
+    background-color: white;
+    height: 100%;
+  }
+
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .info h1 {
+    color: #6e9973;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 7px #15290ccc;
+  }
+
+  .button {
+    color: #f1fdf1;
+    background-color: #84aa83cc;
+    padding: 8px 20px;
+    border: 10x solid;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10%;
+  }
+
+  @media (max-width: 800px) {
+    body {
+      height: auto;
+      max-width: 100%;
+      padding: 20px 15px;
+    }
+    .container {
+      flex-direction: column;
+      height: auto;
+      max-width: 370px;
+      gap: 28px;
+      padding: 25px;
+    }
+    .title-about {
+      font-size: 2.2rem;
+      margin-bottom: -10px;
+      text-align: center;
+    }
+    .emoji {
+      font-size: 2.0rem;
+      margin-bottom: -15px;
+      text-align: center;
+    }
+    .photo-frame {
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      flex: none;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="region" aria-label="About me section">
+    <div class="title-about">𐙚About Me𐙚</div>
+    <div class="photo-frame" role="img" aria-label="Photo of Me">
+      <img src="img nadiyah.jpeg" alt="Portrait of me" />
+    </div>
+  <div class="container" role="button">
+    <p>☆Hi everyone! This is my biodata!☆</p>
+    <a href="index.html" class="button">Click Here!</a>
+  </div>
+</body>
+</html>
+

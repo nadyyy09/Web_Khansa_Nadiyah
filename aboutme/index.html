@@ -14,7 +14,7 @@
 
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #eeb4ce, #a6d785);
+    background: linear-gradient(135deg, #addba2, #bce4a1);
     color: #2b3a2b;
     max-width: 800px;
     min-height: 600px;
@@ -32,7 +32,7 @@
     flex-direction: row;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
-    box-shadow: 0 10px 35px rgba(255, 0, 120, 0.3);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
     padding: 35px;
     width: 100%;
     max-width: 780px;
@@ -40,12 +40,28 @@
     gap: 45px;
   }
 
+  .title-about {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #81a081;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 7px #769967cc;
+  }
+
+  .emoji {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #779977;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 7px #769967cc;
+  }
+
   .photo-frame {
     flex: 0 0 280px;
-    border: 8px solid #7bb661;
+    border: 8px solid #6f8a6c;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 28px #ea52b1cc;
+    box-shadow: 0 0 28px #449941cc;
     background-color: white;
     height: 100%;
   }
@@ -65,7 +81,7 @@
   }
 
   .info h1 {
-    color: #45a552;
+    color: #6e9973;
     font-size: 3rem;
     font-weight: 700;
     text-shadow: 1px 1px 7px #7bb661cc;
@@ -73,19 +89,19 @@
 
   .info p {
     font-size: 1.5rem;
-    color: #2b3a2b;
+    color: #4b614b;
   }
 
   .highlight {
     font-weight: 700;
-    color: #7bb661;
+    color: #85a876;
   }
 
   .quote {
     font-style: italic;
-    color: #a43f80;
+    color: #8ac075;
     font-size: 1.3rem;
-    border-left: 6px solid #a43f80;
+    border-left: 6px solid #8fb486;
     padding-left: 20px;
     margin-top: 25px;
   }
@@ -99,23 +115,35 @@
     .container {
       flex-direction: column;
       height: auto;
-      max-width: 360px;
+      max-width: 400px;
       gap: 28px;
       padding: 25px;
+    }
+    .title-about {
+      font-size: 2.0rem;
+      margin-bottom: -60px;
+      text-align: center;
+    }
+    .emoji {
+      font-size: 2.0rem;
+      margin-bottom: -15px;
+      text-align: center;
     }
     .photo-frame {
       width: 200px;
       height: 200px;
-      border-radius: 50%;
+      border-radius: 25%;
       flex: none;
       margin: 0 auto;
+      margin-bottom: -20px;
     }
     .info h1 {
-      font-size: 2.2rem;
+      font-size: 2.0rem;
       text-align: center;
     }
     .info p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
+      margin-bottom: 2px;
       text-align: center;
     }
     .quote {
@@ -130,16 +158,22 @@
 </head>
 <body>
   <div class="container" role="region" aria-label="About me section">
+    <div class="title-about">𐙚About Me𐙚</div>
+    <div class="emoji">૮₍´˶• . • ⑅ ₎ა</div>
     <div class="photo-frame" role="img" aria-label="Photo of Me">
-      <img src="foto khansa.jpeg" alt="Portrait of me" />
+      <img src="img nadiyah.jpeg" alt="Portrait of me" />
     </div>
     <div class="info">
       <h1>Khansa Nadiyah</h1>
-      <p><span class="highlight">Highfive</p>
+      <p><span class="highlight">☆Highfive☆</p>
+      <p><span class="highlight">Date birth:</span> 26 September 2009 </p>
       <p><span class="highlight">Hobby:</span> Membaca & Menggambar</p>
       <p><span class="highlight">Asal Sekolah:</span> SMPIT Fitrah Hanniah</p>
-      <p><span class="highlight">Favorite Food:</span> Ayam goreng </p>
-      <p class="quote">"You're enough just as you are"</p>
+      <p><span class="highlight">Universitas Impian:</span> ITB & UNPAD </p>
+      <p><span class="highlight">Favorite Food:</span> Ayam Goreng </p>
+      <p><span class="highlight">Favorite color:</span> Pink & HIjau</p>
+      <p class="quote">"You're enough just as you are"</p><p>ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ</p>
+      
     </div>
   </div>
 </body>
